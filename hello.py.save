@@ -1,0 +1,12 @@
+from flask import Flask
+app = Flask(__name__)
+
+import Rpi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+
+
+@app.route('/on')
+def on():
+
+    return 'les led s''
